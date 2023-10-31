@@ -1,1 +1,1 @@
-alert("hallo ainan");
+alert('Hello WPU!');
