@@ -1,8 +1,17 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eius perspiciatis ratione natus quam veritatis corrupti velit labore vel recusandae quia quis nisi impedit officiis quo placeat dolor cum, voluptatum reiciendis, mollitia accusamus nobis? Obcaecati esse labore vitae dolorem perspiciatis asperiores natus veniam aperiam corrupti tempore suscipit odio error</p> <p>nisi, nesciunt omnis provident velit? Veritatis incidunt quae facere illum unde a animi voluptatum repudiandae eligendi est, sapiente accusantium itaque quisquam tempore consequuntur. Ea rem nihil ad, quas exercitationem eveniet odit similique nam quam recusandae ducimus explicabo sed laudantium ipsum temporibus dolorum fuga, incidunt hic praesentium, minus est. Ipsa, accusamus?</p> 
 
 App\Models\Post::create([
-'title' => 'Judul Ke kedua',
-'slug' => 'judul-kedua'
-'excerpt' =>'excerpt kedua',
+'title' => 'Judul Ke ketiga',
+'category_id' => 3, 
+'slug' => 'judul-ketiga',
+'excerpt' =>'excerpt ketiga',
 'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eius perspiciatis ratione natus quam veritatis corrupti velit labore vel recusandae quia quis nisi impedit officiis quo placeat dolor cum, voluptatum reiciendis, mollitia accusamus nobis? Obcaecati esse labore vitae dolorem perspiciatis asperiores natus veniam aperiam corrupti tempore suscipit odio error</p> <p>nisi, nesciunt omnis provident velit? Veritatis incidunt quae facere illum unde a animi voluptatum repudiandae eligendi est, sapiente accusantium itaque quisquam tempore consequuntur. Ea rem nihil ad, quas exercitationem eveniet odit similique nam quam recusandae ducimus explicabo sed laudantium ipsum temporibus dolorum fuga, incidunt hic praesentium, minus est. Ipsa, accusamus?</p>'
 ])
+
+App\Models\Category::create([
+'name' => 'Web Design',
+'slug' => 'web-deign'])
+
+App\Models\Cat::create([
+'name' => 'Personal',
+'slug' => 'personal'])
