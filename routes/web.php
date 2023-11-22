@@ -34,9 +34,9 @@ Route::get('/about', function () {
     return view('about', [
         'title' => "About",
         'active' => 'about',
-        'name' => "Muhammad Lutfi",
-        'email' => "ghifarullah11@gmail.com",
-        'image' => "nophoto.png"
+        'name' => "Ainan Bahrul Ihsan",
+        'email' => "ainanihj@gmail.com",
+        'image' => "ainan.jpg"
     ]);
 });
 
