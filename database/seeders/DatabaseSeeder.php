@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\Post;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -15,14 +16,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        
+
         //  \App\Models\User::factory(10)->create();
 
-        // User::create([
-        //     'name' => 'Ainan',
-        //     'email'=> 'ainanihj@gmail.com',
-        //     'password'=> bcrypt('12345')
-        // ]);
+        User::create([
+            'name' => 'Ainan',
+            'username' => 'ainan2312',
+            'email' => 'ainanihj@gmail.com',
+            'password' => bcrypt('12345')
+        ]);
 
         // User::create([
         //     'name' => 'Pandi',
@@ -33,18 +35,18 @@ class DatabaseSeeder extends Seeder
 
         Post::factory(20)->create();
         Category::create([
-            'name'=> 'Web Programming',
-            'slug'=> 'web-programming',
+            'name' => 'Web Programming',
+            'slug' => 'web-programming',
         ]);
-        
+
         Category::create([
             'name' => "Web Design",
             'slug' => "web-design"
         ]);
-        
+
         Category::create([
-            'name'=> 'Personal',
-            'slug'=> 'personal'
+            'name' => 'Personal',
+            'slug' => 'personal'
         ]);
 
         // Post::create([
